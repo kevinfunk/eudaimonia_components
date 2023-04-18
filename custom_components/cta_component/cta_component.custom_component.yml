@@ -1,0 +1,11 @@
+name: Call To Action component
+# https://codepen.io/mtorosian/pen/ezaQrb
+category: cpt_cat_example
+js:
+  cta_component.js: {}
+css:
+  cta_component.css: {}
+dependencies:
+  - core/jquery
+form: form.json
+preview_image: preview.png
