@@ -1,11 +1,11 @@
 // CSS/JS ONLY
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, once) {
     "use strict";
 
     Drupal.behaviors.ctaComponent = {
-        attach: function (context) {
-            $('.cta_component').once().each(function() {
-                const content = JSON.parse($(this).attr('data-ssa-custom-component'));
+        attach: function attach(context) {
+            once('ctaComponent', '.cta_component', context).forEach(function (component) {
+                const content = JSON.parse($(component).attr('data-ssa-custom-component'));
 
                 const template = `
                   <div class="cta-component-container">
@@ -19,9 +19,8 @@
                   </div>
                 `;
 
-                $(this).append(template);
-
-                $(this).find('.cta-component-container ').css({
+                $(component).append(template);
+                $(component).find('.cta-component-container ').css({
                   '--introBackgroundColor': content.background_left,
                   '--introColor' : content.color_left,
                   '--actionBackgroundColor' : content.background_right,
@@ -30,4 +29,4 @@
             });
         }
     };
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, once);

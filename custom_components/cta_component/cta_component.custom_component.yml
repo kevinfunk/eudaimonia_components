@@ -7,5 +7,6 @@ css:
   cta_component.css: {}
 dependencies:
   - core/jquery
+  - core/once
 form: form.json
 preview_image: preview.png
