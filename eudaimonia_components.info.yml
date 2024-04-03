@@ -1,6 +1,6 @@
 name: Eudaimonia components
 type: module
 description: Provides custom components for Eudaimonia
-core_version_requirement: ^9 || ^10
+core_version_requirement: '>=9.1'
 dependencies:
   - cohesion
