@@ -9,3 +9,5 @@ Provides a simple call to action with form fields for
 - Font colors
 
 ![Screenshot](custom_components/cta_component/preview.png)
+
+[Figma file](https://www.figma.com/design/RVt0tCmbVZHwmonMebKApp/Eudaimonia-components?node-id=0-1&node-type=canvas)
